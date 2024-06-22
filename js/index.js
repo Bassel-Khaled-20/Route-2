@@ -37,7 +37,7 @@ console.log(dayStr);
 
 async function getWeather(find) {
     
-        var response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=8c181013fd3b44ea8a143201241706&q=${find}&days=3`);
+        var response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=8c181013fd3b44ea8a143201241706&q=${find}&days=3`);
         let result = await response.json();
         allWeather = result;
         console.log(allWeather);
